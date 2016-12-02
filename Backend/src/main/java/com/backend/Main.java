@@ -1,8 +1,8 @@
-import com.Config.Controller.JSONController;
+package com.backend;
+
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * Created by Felix on 02.12.2016.
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
  * Project: DataRun-WaterLevels
  */
 @SpringBootApplication
-@ComponentScan(basePackageClasses = JSONController.class)
+@EnableScheduling
 public class Main {
     public static void main(String[] args){
         SpringApplication.run(Main.class, args);
